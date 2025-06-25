@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Tabela Periódica - Estilo Kahoot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="menu-inicial" class="menu-inicial">
+            <h1 class="titulo" data-text="Quiz de Química dos Guri💪">Quiz de Química dos Guri💪</h1>
+            <button id="btn-iniciar" class="btn-iniciar">Iniciar Jogo</button>
+        </div>
+        <div id="instrucoes" class="instrucoes" style="display:none;">
+            <div class="instrucoes-container">
+                <h2 class="instrucoes-titulo">ANTES DE COMEÇAR O JOGO:</h2>
+                <div class="pontuacao">
+                    <h3>Pontuação:</h3>
+                    <div class="pontos-item">
+                        <span class="posicao">🥇</span>
+                        <span class="descricao">Primeiro a acertar</span>
+                        <span class="pontos">10 pontos</span>
+                    </div>
+                    <div class="pontos-item">
+                        <span class="posicao">🥈</span>
+                        <span class="descricao">Segundo a acertar</span>
+                        <span class="pontos">8 pontos</span>
+                    </div>
+                    <div class="pontos-item">
+                        <span class="posicao">🥉</span>
+                        <span class="descricao">Terceiro a acertar</span>
+                        <span class="pontos">7 pontos</span>
+                    </div>
+                    <div class="pontos-item">
+                        <span class="posicao">🏅</span>
+                        <span class="descricao">Quarto e Quinto a acertar</span>
+                        <span class="pontos">5 pontos</span>
+                    </div>
+                </div>
+                <button id="btn-comecar" class="btn-comecar">COMEÇAR QUIZ</button>
+            </div>
+        </div>
+        <div id="quiz" style="display:none;">
+            <div class="progresso">
+                <span id="numero-pergunta"></span>
+                <div class="dificuldade-container">
+                    <span id="dificuldade" class="dificuldade"></span>
+                </div>
+                <div class="timer-container">
+                    <div id="timer" class="timer">20</div>
+                </div>
+                <div class="barra-externa"><div id="barra-progresso" class="barra-progresso"></div></div>
+            </div>
+            <div id="pergunta" class="pergunta"></div>
+            <div id="alternativas" class="alternativas"></div>
+            <div class="botoes-controle">
+                <button id="verificar" class="btn-verificar" style="display:none;">Verificar Resposta</button>
+                <button id="proxima" class="proxima" style="display:none;">Próxima Pergunta</button>
+            </div>
+        </div>
+        <div id="resultado" class="resultado"></div>
+        <div id="tela-final" class="tela-final" style="display:none;">
+            <div class="resultado-container">
+                <div class="resultado-header">
+                    <h2 class="resultado-titulo"> QUIZ FINALIZADO! </h2>
+                    <div class="resultado-subtitulo">Vamos para os resultados!</div>
+                </div>
+                <div class="resultado-content">
+                    <div class="resultado-info">
+                        
+                    </div>
+                    
+                </div>
+                <button id="voltar-menu" class="btn-voltar">VOLTAR AO MENU</button>
+            </div>
+        </div>
+        <button id="reiniciar" class="reiniciar" style="display:none;">Voltar ao Menu</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
